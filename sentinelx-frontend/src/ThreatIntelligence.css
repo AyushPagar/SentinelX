@@ -1,0 +1,467 @@
+
+.ti-page {
+  color: #e8edf7;
+  padding: 8px 0 30px;
+}
+
+.ti-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.ti-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #a6adff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+}
+
+.ti-header h1 {
+  margin: 12px 0 8px;
+  font-size: clamp(25px, 4vw, 34px);
+  letter-spacing: -1px;
+}
+
+.ti-header p {
+  color: #929db3;
+  font-size: 14px;
+  line-height: 1.7;
+  max-width: 650px;
+}
+
+.ti-refresh {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 11px 15px;
+  border: 1px solid #303b50;
+  border-radius: 10px;
+  background: #151e2d;
+  color: #e8edf7;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ti-refresh:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.ti-notice {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #33415c;
+  border-radius: 12px;
+  background: #151e30;
+  color: #b5c3df;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.ti-notice svg {
+  flex-shrink: 0;
+  color: #9ea9ff;
+}
+
+.ti-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 24px;
+}
+
+.ti-stat {
+  padding: 20px;
+  background: #111927;
+  border: 1px solid #283449;
+  border-radius: 14px;
+}
+
+.ti-stat span {
+  display: block;
+  color: #929db3;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.ti-stat strong {
+  font-size: 27px;
+  letter-spacing: -0.7px;
+}
+
+.ti-panel {
+  padding: 22px;
+  border: 1px solid #29364b;
+  border-radius: 16px;
+  background: #111927;
+}
+
+.ti-panel-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.ti-panel-heading h2 {
+  font-size: 18px;
+  margin: 0 0 7px;
+}
+
+.ti-panel-heading p {
+  color: #929db3;
+  font-size: 12px;
+  margin: 0;
+}
+
+.ti-panel-heading > svg {
+  color: #a6adff;
+}
+
+.ti-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.ti-search {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  min-width: 0;
+  padding: 0 12px;
+  border: 1px solid #303b50;
+  border-radius: 10px;
+  background: #0d1421;
+  color: #8796b2;
+}
+
+.ti-search input {
+  width: 100%;
+  min-width: 0;
+  padding: 12px 0;
+  border: 0;
+  outline: none;
+  background: transparent;
+  color: #e8edf7;
+  font: inherit;
+  font-size: 12px;
+}
+
+.ti-search input::placeholder {
+  color: #74829b;
+}
+
+.ti-controls select {
+  max-width: 190px;
+  padding: 11px 12px;
+  border: 1px solid #303b50;
+  border-radius: 10px;
+  background: #151e2d;
+  color: #e8edf7;
+  font: inherit;
+  font-size: 12px;
+}
+
+.ti-threat-list {
+  display: grid;
+  gap: 14px;
+}
+
+.ti-threat-card {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid #29364b;
+  border-radius: 13px;
+  background: #0e1624;
+}
+
+.ti-threat-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ti-ip-icon {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  color: #a9b5ff;
+  background: #242747;
+}
+
+.ti-threat-identity {
+  flex: 1;
+  min-width: 0;
+}
+
+.ti-threat-identity strong {
+  display: block;
+  font-size: 15px;
+  overflow-wrap: anywhere;
+}
+
+.ti-threat-identity span {
+  display: block;
+  color: #929db3;
+  font-size: 11px;
+  margin-top: 5px;
+}
+
+.ti-level {
+  padding: 6px 9px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.4px;
+}
+
+.ti-level.critical {
+  color: #ff9696;
+  background: #44232c;
+}
+
+.ti-level.high {
+  color: #ffc078;
+  background: #413020;
+}
+
+.ti-level.medium {
+  color: #f4dc83;
+  background: #3d3924;
+}
+
+.ti-level.low {
+  color: #7ee3b0;
+  background: #193b32;
+}
+
+.ti-score-row {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-top: 22px;
+}
+
+.ti-score-row > div:first-child {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+  min-width: 130px;
+}
+
+.ti-score-row span {
+  color: #929db3;
+  font-size: 12px;
+}
+
+.ti-score-row strong {
+  font-size: 19px;
+}
+
+.ti-score-track {
+  flex: 1;
+  height: 8px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #263147;
+}
+
+.ti-score-fill {
+  height: 100%;
+  border-radius: inherit;
+  transition: width 250ms ease;
+}
+
+.ti-score-fill.critical {
+  background: #ff666f;
+}
+
+.ti-score-fill.high {
+  background: #f5a64b;
+}
+
+.ti-score-fill.medium {
+  background: #e7cc5e;
+}
+
+.ti-score-fill.low {
+  background: #43c995;
+}
+
+.ti-last-seen {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #929db3;
+  font-size: 11px;
+  margin-top: 17px;
+  overflow-wrap: anywhere;
+}
+
+.ti-details-button {
+  margin-top: 16px;
+  padding: 9px 12px;
+  border: 1px solid #303b50;
+  border-radius: 8px;
+  background: #182338;
+  color: #c6ceff;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.ti-details {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #29364b;
+}
+
+.ti-details h3 {
+  margin: 0 0 10px;
+  font-size: 13px;
+}
+
+.ti-details ul {
+  padding-left: 20px;
+  margin: 0 0 22px;
+}
+
+.ti-details li {
+  color: #b5c0d2;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.ti-event {
+  padding: 13px 0;
+  border-bottom: 1px solid #29364b;
+}
+
+.ti-event > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ti-event strong {
+  font-size: 12px;
+}
+
+.ti-event span {
+  color: #ffc078;
+  font-size: 10px;
+}
+
+.ti-event p {
+  color: #b5c0d2;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.ti-event small {
+  display: block;
+  color: #8796b2;
+  font-size: 10px;
+  margin-top: 6px;
+  overflow-wrap: anywhere;
+}
+
+.ti-analysis-note {
+  margin-top: 16px;
+  color: #aab6cc;
+  font-size: 11px;
+  line-height: 1.8;
+}
+
+.ti-message {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding: 24px;
+  border: 1px solid #29364b;
+  border-radius: 12px;
+  color: #a9b5ff;
+  font-size: 13px;
+}
+
+.ti-error {
+  color: #ff9696;
+}
+
+.ti-error p {
+  color: #aab6cc;
+}
+
+.ti-error button {
+  padding: 8px 12px;
+  border: 1px solid #39465e;
+  border-radius: 8px;
+  background: #202c40;
+  color: #fff;
+  cursor: pointer;
+}
+
+.ti-spin {
+  animation: ti-spin 1s linear infinite;
+}
+
+@keyframes ti-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 850px) {
+  .ti-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .ti-header {
+    flex-direction: column;
+  }
+
+  .ti-controls {
+    flex-direction: column;
+  }
+
+  .ti-controls select {
+    max-width: none;
+  }
+
+  .ti-panel {
+    padding: 15px;
+  }
+
+  .ti-score-row {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .ti-score-track {
+    width: 100%;
+    flex: auto;
+  }
+
+  .ti-threat-top {
+    flex-wrap: wrap;
+  }
+}

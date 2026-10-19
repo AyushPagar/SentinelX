@@ -1,0 +1,29 @@
+﻿# Secrets and environment files
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Java / Spring Boot
+**/target/
+*.class
+*.log
+
+# Node.js / React / Vite
+**/node_modules/
+**/dist/
+**/coverage/
+npm-debug.log*
+
+# IDE and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local databases and credentials
+*.sqlite
+*.sqlite3
+*.db
